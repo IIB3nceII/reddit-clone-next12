@@ -1,5 +1,40 @@
 .container {
+  @apply flex sticky top-0 px-4 py-2
+       bg-white shadow-sm;
+
   .imageContainer {
-    @apply relative h-10 w-20;
+    @apply flex-shrink-0 relative h-10 w-20;
+  }
+
+  .options {
+    @apply flex items-center mx-7 xl:min-w-[300px];
+
+    .icon {
+      @apply h-5 w-5;
+    }
+
+    > p {
+      @apply flex-1 ml-2 hidden lg:inline;
+    }
+  }
+
+  form {
+    @apply flex flex-1 items-center space-x-2 px-2
+         bg-gray-100 border rounded-sm border-gray-200;
+
+    > input {
+      @apply flex-1 bg-transparent outline-none;
+    }
+
+    .icon {
+      @apply h-6 w-6 text-gray-400;
+    }
+  }
+
+  nav {
+    @apply flex;
+
+    .icon {
+    }
   }
 }
