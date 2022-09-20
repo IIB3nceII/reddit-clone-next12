@@ -1,10 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import s from "./Header.module.scss";
+import { HomeIcon, ChevronDownIcon, MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import {
-  HomeIcon,
-  ChevronDownIcon,
-  MagnifyingGlassIcon,
   BellIcon,
   ChatBubbleOvalLeftIcon,
   GlobeAmericasIcon,
@@ -12,7 +10,8 @@ import {
   PhoneIcon,
   VideoCameraIcon,
   SparklesIcon,
-} from "@heroicons/react/24/solid";
+  Bars3Icon,
+} from "@heroicons/react/24/outline";
 import { Divider } from "../../common";
 
 const Header = () => {
@@ -35,15 +34,26 @@ const Header = () => {
       </form>
 
       <nav>
-        <SparklesIcon className={s.icon} />
-        <GlobeAmericasIcon className={s.icon} />
-        <VideoCameraIcon className={s.icon} />
+        <SparklesIcon className="icon" />
+        <GlobeAmericasIcon className="icon" />
+        <VideoCameraIcon className="icon" />
         <Divider />
-        <ChatBubbleOvalLeftIcon className={s.icon} />
-        <BellIcon className={s.icon} />
-        <PlusIcon className={s.icon} />
-        <PhoneIcon className={s.icon} />
+        <ChatBubbleOvalLeftIcon className="icon" />
+        <BellIcon className="icon" />
+        <PlusIcon className="icon" />
+        <PhoneIcon className="icon" />
       </nav>
+
+      <div className={s.hamburgerContainer}>
+        <Bars3Icon className="icon" />
+      </div>
+
+      <div className={s.signIn}>
+        <div className={s.imageContainer}>
+          <Image src="https://img.favpng.com/5/19/1/reddit-logo-computer-icons-png-favpng-VY0U5enmF1wyyK3Hk98zJmBNx.jpg" layout="fill" />
+        </div>
+        <p>Sign In</p>
+      </div>
     </header>
   );
 };

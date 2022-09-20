@@ -32,9 +32,24 @@
   }
 
   nav {
-    @apply flex;
+    @apply flex items-center mx-5 space-x-2 
+         text-gray-500 hidden lg:inline-flex;
+  }
 
-    .icon {
+  .hamburgerContainer {
+    @apply flex ml-5 items-center lg:hidden;
+  }
+
+  .signIn {
+    @apply hidden items-center space-x-2
+           border border-gray-100 p-2 lg:flex;
+
+    > p {
+      @apply text-gray-400;
+    }
+
+    .imageContainer {
+      @apply relative h-5 w-5 flex-shrink-0;
     }
   }
 }
