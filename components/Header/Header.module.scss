@@ -42,7 +42,7 @@
 
   .signIn {
     @apply hidden items-center space-x-2
-           border border-gray-100 p-2 lg:flex;
+           border border-gray-100 p-2 cursor-pointer lg:flex;
 
     > p {
       @apply text-gray-400;
