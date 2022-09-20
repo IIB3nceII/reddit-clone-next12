@@ -1,17 +1,15 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import type { NextPage } from "next";
+import Head from "next/head";
 
-const Home: NextPage = () => {
-  return (
-    <div>
-      <Head>
-        <title>Reddit Clone</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+const Home: NextPage = () => (
+  <div>
+    <Head>
+      <title>Reddit Clone</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
 
-      <h1>faszom</h1>
-    </div>
-  )
-}
+    <h1>faszom</h1>
+  </div>
+);
 
-export default Home
+export default Home;
